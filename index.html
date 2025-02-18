@@ -7,11 +7,16 @@
     <title>Document</title>
 </head>
 <style>
+    *{padding: 0;
+        margin: 0;
+        
+    }
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 90vh;
+        height: 100vh;
+        background-color: wheat;
     }
 
     .box {
@@ -22,6 +27,7 @@
         padding: 25px;
         margin: 20px;
         text-align: center;
+        background-color: rgb(139, 134, 134);
     }
 
     .input {
@@ -43,6 +49,7 @@
         margin: 0 auto;
         padding: 20px;
         margin-bottom: 35px;
+        background-color: white;
 
     }
 
@@ -52,12 +59,20 @@
         padding: 10px;
         font-size: 15px;
         width: 120px;
+        
+       
     }
 
     .buttons {
         display: flex;
         justify-content: space-between;
 
+    }
+    .btn1{
+        background-color: rgb(202, 78, 56)
+    }
+    .btn2{
+        background-color: rgb(18, 163, 18);
     }
 </style>
 
@@ -71,8 +86,8 @@
             <p class="output" id="output1"> - </p>
             <div class="buttons">
 
-                <button class="btn" id="clr" onclick="clear()"> CLEAR</button>
-                <button class="btn" id="btn" onclick="calculate()"> CALCULATE</button>
+                <button class="btn btn1" id="clr" onclick="clear()"> CLEAR</button>
+                <button class="btn btn2" id="btn" onclick="calculate()"> CALCULATE</button>
 
             </div>
 
