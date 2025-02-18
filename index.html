@@ -62,18 +62,35 @@
         <div class="box">
            
             <h1> AREA CALCULATOR</h1>
-            <input type="number" class="input">
-            <input type="number" class="input">
-            <p class="output"> - </p>
+            <input type="number" class="input" id="input1">
+            <input type="number" class="input" id="input2">
+            <p class="output" id="output1"> - </p>
             <div class="buttons">
                 
-                <button class="btn"> CLEAR</button>
-                <button class="btn"> CALCULATE</button>
+                <button class="btn" onclick="clear()"> CLEAR</button>
+                <button class="btn" id="btn" onclick="calculate()"> CALCULATE</button>
             
             </div>
 
         </div>
     </div>
+    <script>
+        function calculate() {
+            const InputElement1 = document.getElementById("input1")
+            const InputElement2 = document.getElementById("input2")
+            const OutputElement = document.getElementById("output1")
+
+            const length = InputElement1 ;
+            const breadth = InputElement2 ;
+
+            const area = length.value * breadth.value
+
+             OutputElement.innerText = ` AREA : ${area} sq.cm`
+
+        }
+  
+
+    </script>
 </body>
 
 </html>
