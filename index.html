@@ -102,6 +102,16 @@
             const length = InputElement1;
             const breadth = InputElement2;
 
+            if (length.value == "") {
+                 alert  (`please enter the length`);
+                return ;
+                
+            }
+            if (breadth.value == "") {
+                alert (`please enter the breadth`);
+                return ;
+                
+            }
             const area = length.value * breadth.value
 
             OutputElement.innerText = ` AREA : ${area} sq.cm`
